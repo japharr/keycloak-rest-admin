@@ -1,5 +1,6 @@
 package com.japharr.keycloakadmin.config.keycloak
 
+import org.springframework.core.ParameterizedTypeReference
 import org.springframework.core.convert.converter.Converter
 import java.util.stream.Collectors
 import org.springframework.security.core.authority.SimpleGrantedAuthority
