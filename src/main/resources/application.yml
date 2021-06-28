@@ -12,7 +12,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: ${keycloak.auth-url}/realms/${keycloak.realm}/protocol/openid-connect/certs # JSON Web Key URI to use to verify the JWT token.
+          jwk-set-uri: ${keycloak.auth-url}/realms/${keycloak.realm}/protocol/openid-connect/certs
       client:
         registration:
           keycloak:
@@ -61,8 +61,8 @@ logging:
     com.japharr.keycloakadmin: Debug
 
 keycloak:
-  realm: ${KEYCLOAK_REALM:myrealm}
+  realm: ${KEYCLOAK_REALM:}
   auth-url: http://${KEYCLOAK_HOST:localhost}:${KEYCLOAK_PORT:7070}/auth
   credentials:
-    client-id: ${KEYCLOAK_CLIENT_ID:admin-connect}
-    client-secret: ${KEYCLOAK_CLIENT_SECRET:b1b26004-a9d8-42f0-b7d2-69490aaea11f}
+    client-id: ${KEYCLOAK_CLIENT_ID:}
+    client-secret: ${KEYCLOAK_CLIENT_SECRET:}
