@@ -1,6 +1,9 @@
 spring:
   profiles:
-    active: dev
+    active: dev, web-client
+
+  application:
+    name: keycloak-rest-admin
 
   messages:
     basename: i18n/messages
